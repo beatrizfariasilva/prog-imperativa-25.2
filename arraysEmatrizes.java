@@ -68,7 +68,7 @@ public class arraysEmatrizes {
 */
 
 //EXERCÍCIO 3
-/*
+
 import java.util.Scanner;
 public class arraysEmatrizes {
     public static Scanner input = new Scanner (System.in);
@@ -107,7 +107,7 @@ public class arraysEmatrizes {
 
 
 }
-*/
+
 
 
 //EXERCÍCIO 4
