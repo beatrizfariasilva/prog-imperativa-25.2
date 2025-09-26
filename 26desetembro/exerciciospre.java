@@ -31,7 +31,7 @@ public class exerciciospre{
             }
         }
 
-/*        public static int removerTodos(int v[], int tam, int alvo){
+/*      public static int removerTodos(int v[], int tam, int alvo){
             int novoTam=tam;
             int i=0;
             while(i<novoTam){
@@ -47,7 +47,7 @@ public class exerciciospre{
 */ 
 
 //outraversão
-/*      public static int removerTodos(int v[], int tam, int alvo){^
+/*      public static int removerTodos(int v[], int tam, int alvo){
             int novoTam=0;
             for (int i=0; i<tam, i++){
                 if (v[i]!=alvo){
