@@ -8,11 +8,12 @@ public class selectionsort {
                     posMenor=j;
                 }
             }
-    if (i!=posMenor){
-        int aux=v[i];
-        v[i]=v[posMenor];
-        v[posMenor]=aux;
-            }
+            if (i!=posMenor){
+                int aux=v[i];
+                v[i]=v[posMenor];
+                v[posMenor]=aux;
+                } //DENTRO DO PRIMEIRO FOR
         }
     }
 }
+
