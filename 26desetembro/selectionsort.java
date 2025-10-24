@@ -1,0 +1,22 @@
+public class selectionsort {
+    public static void Selectionsort(int v[], int tam){
+        for (int i=0; i<=tam-2; i++){
+            //tam-2 é a penúltima posição de um vetor
+            int posMenor=i;
+            for (int j=i+1; i<tam; i++){
+                if (v[j]<v[posMenor]){
+                    posMenor=j;
+                }
+            }
+            if (i!=posMenor){
+                int aux=v[i];
+                v[i]=v[posMenor];
+                v[posMenor]=aux;
+                } //DENTRO DO PRIMEIRO FOR
+        }
+    }
+}
+
+
+
+
