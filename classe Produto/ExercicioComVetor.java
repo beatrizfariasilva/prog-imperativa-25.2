@@ -1,12 +1,20 @@
 import java.util.Scanner;
 
-public class Exercicio {
+class Produto{
+    String titulo;
+    String descricao;
+    double precoUnitario;
+    int qtdEstoque;
+};
+
+public class ExercicioComVetor {
     public static Scanner input=new Scanner(System.in);
     public static void impressao(Produto x){
         System.out.println("Nome do produto: "+x.titulo);
         System.out.println("Descrição do produto: "+x.descricao);
         System.out.printf("Preço do produto: %.2f\n",x.precoUnitario);
         System.out.println("Quantidade em estoque: "+x.qtdEstoque);
+        System.out.println("\n");
     }
 
     public static void scanneando(Produto x){
@@ -19,24 +27,28 @@ public class Exercicio {
         System.out.println("Digite a quantidade em estoque do produto desejado");
         x.qtdEstoque=input.nextInt();
         String buff=input.nextLine();
+        System.out.println("\n");
     }
 
    public static void main(String[] args) {
 
+        Produto[] produtos=new Produto[5];
+
+        for (int i=0; i<produtos.length; i++){
+            produtos[i]=new Produto();
+        }
+
+        System.out.println("---------------Preenchimento do vetor do produtos---------------");
+        for (int i=0; i<produtos.length; i++){
+            scanneando(produtos[i]);
+        }
+    
+
+        System.out.println("---------------Impressão do vetor de produtos---------------");
+        for (int i=0; i<produtos.length; i++){
+            impressao(produtos[i]);
+        }
         
-        Produto produto1=new Produto();
-        Produto produto2=new Produto();
-
-        System.out.println("---------------Digitação dos dados do produto 1---------------");
-        scanneando(produto1);
-
-        System.out.println("---------------Digitação dos dados do produto 2---------------");
-        scanneando(produto2);
-
-        System.out.println("---------------Impressão dos dados dos produtos---------------");
-        impressao(produto1);
-        System.out.println("\n\n");
-        impressao(produto2);
    }
 
 
