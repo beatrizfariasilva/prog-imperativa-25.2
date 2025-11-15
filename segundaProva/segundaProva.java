@@ -19,8 +19,6 @@ public class segundaProva{
     }
 
 
-
-
     public static int cadastrarPessoa(Pessoa[] v, int qtd){
         if (qtd>=v.length){
             return qtd;
@@ -137,6 +135,7 @@ public class segundaProva{
         insertionSortPorNome(lista, qtd);
         imprimirPessoas(lista, qtd);
 
+        System.out.println("Quem ficou no lugar foi: ");
         imprimirUmaPessoa(retirarMaisNovo(lista, qtd));
 
     }
