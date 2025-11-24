@@ -3,4 +3,5 @@ public class Produto{
     String descricao;
     double precoUnitario;
     int qtdEstoque;
+    
 }

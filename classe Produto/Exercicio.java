@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Exercicio {
     public static Scanner input=new Scanner(System.in);
     public static void impressao(Produto x){
-        System.out.println("Nome do produto: "+x.titulo);
+        System.out.println("Nome do produto: "+x.nome);
         System.out.println("Descrição do produto: "+x.descricao);
         System.out.printf("Preço do produto: %.2f\n",x.precoUnitario);
         System.out.println("Quantidade em estoque: "+x.qtdEstoque);
@@ -11,7 +11,7 @@ public class Exercicio {
 
     public static void scanneando(Produto x){
         System.out.println("Digite o nome do produto desejado");
-        x.titulo=input.nextLine();
+        x.nome=input.nextLine();
         System.out.println("Descreva o produto desejado");
         x.descricao=input.nextLine();
         System.out.println("Digite o preço do produto desejado");
